@@ -868,7 +868,7 @@ static const NSTimeInterval TimeInterval = 10.0;
         Log(@"msg -----  %@",msg);
         [HSHUD hideHUDTo:self.smallView];
         [HSHUD hideHUDTo:self.bigView];
-        [HSHUD showErrorText:msg];
+        [HSHUD showFailedHUD:msg AddedTo:[UIApplication sharedApplication].keyWindow interval:1.5];
         
     };
     

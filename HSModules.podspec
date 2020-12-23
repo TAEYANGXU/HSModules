@@ -43,7 +43,6 @@ TODO: Add long description of the pod here.
   s.subspec 'HUD' do |hud|
         hud.source_files = 'HSModules/Classes/HUD/**/*'
         hud.public_header_files = 'HSModules/Classes/HUD/**/*.h'
-        hud.dependency 'SVProgressHUD'
         hud.dependency 'MBProgressHUD'
         hud.dependency 'XyWidget'
   end
@@ -59,7 +58,6 @@ TODO: Add long description of the pod here.
     s.dependency 'XyWidget'
     s.dependency 'Masonry'
     s.dependency 'VHallSDK_Live'
-    s.dependency 'SVProgressHUD'
     s.dependency 'MBProgressHUD'
     s.dependency 'SDWebImage'
     

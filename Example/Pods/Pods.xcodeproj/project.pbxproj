@@ -54,9 +54,7 @@
 		36B2DEB525937FE50053235C /* HSLiveNoDataView.m in Sources */ = {isa = PBXBuildFile; fileRef = 36B2DEA125937FE50053235C /* HSLiveNoDataView.m */; };
 		36B2DEB625937FE50053235C /* HSLiveVideoLightView.m in Sources */ = {isa = PBXBuildFile; fileRef = 36B2DEA225937FE50053235C /* HSLiveVideoLightView.m */; };
 		36B2DEB725937FE50053235C /* HSHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 36B2DEA425937FE50053235C /* HSHUD.m */; };
-		36B2DEB825937FE50053235C /* HSProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 36B2DEA525937FE50053235C /* HSProgressHUD.m */; };
 		36B2DEB925937FE50053235C /* HSHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 36B2DEA625937FE50053235C /* HSHUD.h */; };
-		36B2DEBA25937FE50053235C /* HSProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 36B2DEA725937FE50053235C /* HSProgressHUD.h */; };
 		38A289C0550F25C9EDBF6A54BABC5A18 /* EXPMatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = A08C066DF1F3ACE0244BF6C79336D0D8 /* EXPMatcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3B2A59E466E5E952E51862D462BD0A6C /* EXPFloatTuple.h in Headers */ = {isa = PBXBuildFile; fileRef = C990F5FCC2FECD563D8EB042C4ABB408 /* EXPFloatTuple.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3C5E21003A743A7AE12E2ED6A68791C9 /* SPTExampleGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = C3778CEB9E52F8A6D925963AFEFE8525 /* SPTExampleGroup.m */; };
@@ -227,9 +225,7 @@
 		36B2DEA125937FE50053235C /* HSLiveNoDataView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSLiveNoDataView.m; sourceTree = "<group>"; };
 		36B2DEA225937FE50053235C /* HSLiveVideoLightView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSLiveVideoLightView.m; sourceTree = "<group>"; };
 		36B2DEA425937FE50053235C /* HSHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSHUD.m; sourceTree = "<group>"; };
-		36B2DEA525937FE50053235C /* HSProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSProgressHUD.m; sourceTree = "<group>"; };
 		36B2DEA625937FE50053235C /* HSHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSHUD.h; sourceTree = "<group>"; };
-		36B2DEA725937FE50053235C /* HSProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSProgressHUD.h; sourceTree = "<group>"; };
 		385D41FEBB710D4573B99E0D106D95CB /* HSModules-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HSModules-prefix.pch"; sourceTree = "<group>"; };
 		38B6E017E52B24B9B668DDE439713662 /* EXPMatcherHelpers.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EXPMatcherHelpers.m; path = Expecta/Matchers/EXPMatcherHelpers.m; sourceTree = "<group>"; };
 		3A6496503E9C3DE7559FBFB74910C104 /* Pods-HSModules_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HSModules_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -458,8 +454,6 @@
 			children = (
 				36B2DEA625937FE50053235C /* HSHUD.h */,
 				36B2DEA425937FE50053235C /* HSHUD.m */,
-				36B2DEA725937FE50053235C /* HSProgressHUD.h */,
-				36B2DEA525937FE50053235C /* HSProgressHUD.m */,
 			);
 			name = HUD;
 			path = HSModules/Classes/HUD;
@@ -767,7 +761,6 @@
 				36B2DEAF25937FE50053235C /* HSDefinitionListCell.h in Headers */,
 				873165886F20870B205EBE37F8185546 /* EXPMatchers+beNil.h in Headers */,
 				0DE0AA588BC61692033B67CFCE4EC742 /* EXPMatchers+beSubclassOf.h in Headers */,
-				36B2DEBA25937FE50053235C /* HSProgressHUD.h in Headers */,
 				2A46DD69C90BDFA0AD55A31D0F16A78A /* EXPMatchers+beSupersetOf.h in Headers */,
 				4A03F7E68886AE6A13DFC35E9A9B942A /* EXPMatchers+beTruthy.h in Headers */,
 				59D34E8065607E956AC2DC046E76B743 /* EXPMatchers+conformTo.h in Headers */,
@@ -1027,7 +1020,6 @@
 				F3EDE6D241EE2A6D0992A24ACDDBAB35 /* EXPFloatTuple.m in Sources */,
 				C4632B64DD0F3ADB3BB829A6EBC322E6 /* EXPMatcherHelpers.m in Sources */,
 				36B2DEAC25937FE50053235C /* HSCustomSlider.m in Sources */,
-				36B2DEB825937FE50053235C /* HSProgressHUD.m in Sources */,
 				36B2DEB325937FE50053235C /* HSDefinitionListCell.m in Sources */,
 				F31CCBB90D75D9E5A83545FD95954FFA /* EXPMatchers+beCloseTo.m in Sources */,
 				6E8A45EF6CD46D90A634E1E9163E562E /* EXPMatchers+beFalsy.m in Sources */,
