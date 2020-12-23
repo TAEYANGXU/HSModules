@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'HSModules'
-  s.version          = '0.1.4'
+  s.version          = '0.1.5'
   s.summary          = '项目组件'
 
 # This description is used to generate tags and improve search results.
@@ -34,10 +34,16 @@ TODO: Add long description of the pod here.
   s.subspec 'VideoModule' do |videoModule|
         videoModule.source_files = 'HSModules/Classes/VideoModule/**/*'
         videoModule.public_header_files = 'HSModules/Classes/VideoModule/**/*.h'
+        videoModule.dependency 'Masonry'
+        videoModule.dependency 'XyWidget'
+        videoModule.dependency 'VHallSDK_Live'
   end
   s.subspec 'HUD' do |hud|
         hud.source_files = 'HSModules/Classes/HUD/**/*'
         hud.public_header_files = 'HSModules/Classes/HUD/**/*.h'
+        hud.dependency 'SVProgressHUD'
+        hud.dependency 'MBProgressHUD'
+        hud.dependency 'XyWidget'
   end
   # s.resource_bundles = {
   #   'HSModules' => ['HSModules/Assets/*.png']
