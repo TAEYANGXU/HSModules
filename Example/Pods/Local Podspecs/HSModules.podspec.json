@@ -1,0 +1,22 @@
+{
+  "name": "HSModules",
+  "version": "0.1.0",
+  "summary": "A short description of HSModules.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/徐琰璋/HSModules",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "徐琰璋": "xuyanzhang@lanyife.com"
+  },
+  "source": {
+    "git": "https://github.com/徐琰璋/HSModules.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "HSModules/Classes/**/*"
+}

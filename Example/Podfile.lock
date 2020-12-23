@@ -1,59 +1,27 @@
 PODS:
-  - HModules (0.1.0):
-    - Masonry
-    - MBProgressHUD
-    - SVProgressHUD
-    - VHallSDK_Live
-    - XyWidget
-  - Masonry (1.1.0)
-  - MBProgressHUD (1.2.0)
-  - SVProgressHUD (2.2.5)
-  - VHallSDK_Live (4.3.4)
-  - XyWidget (1.2.1):
-    - XyWidget/Categorys (= 1.2.1)
-    - XyWidget/Const (= 1.2.1)
-    - XyWidget/Custom (= 1.2.1)
-    - XyWidget/Tools (= 1.2.1)
-    - XyWidget/ViewExtension (= 1.2.1)
-    - YYText
-  - XyWidget/Categorys (1.2.1):
-    - YYText
-  - XyWidget/Const (1.2.1):
-    - YYText
-  - XyWidget/Custom (1.2.1):
-    - YYText
-  - XyWidget/Tools (1.2.1):
-    - YYText
-  - XyWidget/ViewExtension (1.2.1):
-    - XyWidget/Const
-    - YYText
-  - YYText (1.0.7)
+  - Expecta (1.0.6)
+  - HSModules (0.1.0)
+  - Specta (1.0.7)
 
 DEPENDENCIES:
-  - HModules (from `../`)
+  - Expecta
+  - HSModules (from `../`)
+  - Specta
 
 SPEC REPOS:
   trunk:
-    - Masonry
-    - MBProgressHUD
-    - SVProgressHUD
-    - VHallSDK_Live
-    - XyWidget
-    - YYText
+    - Expecta
+    - Specta
 
 EXTERNAL SOURCES:
-  HModules:
+  HSModules:
     :path: "../"
 
 SPEC CHECKSUMS:
-  HModules: 08cafbef0bdb8f66b19f0cd88f21434bfe376598
-  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
-  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
-  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
-  VHallSDK_Live: 7f9899af4c941e7a7e3fa4b30a2889eb462970c4
-  XyWidget: 16fade72f2b08f7d53192f9ac0f7f4da18724072
-  YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
+  Expecta: 3b6bd90a64b9a1dcb0b70aa0e10a7f8f631667d5
+  HSModules: 412c4674d01ad36f9e6011eebad6a3f692bdb0f2
+  Specta: 3e1bd89c3517421982dc4d1c992503e48bd5fe66
 
-PODFILE CHECKSUM: f23503cfb3a6c8fd739673ec3cedc896005b2226
+PODFILE CHECKSUM: 32fb2b85f399fc036da8fe2cf72b8e153d54c44b
 
-COCOAPODS: 1.9.3
+COCOAPODS: 1.8.0
