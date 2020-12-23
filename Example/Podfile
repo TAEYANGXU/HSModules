@@ -1,0 +1,21 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'HSModules_Example' do
+  pod 'HSModules', :path => '../'
+
+  #UI布局
+  pod 'Masonry'
+  #工具
+  pod 'XyWidget', '~> 1.2.1'
+#  #微吼
+  pod 'VHallSDK_Live'
+  
+  target 'HSModules_Tests' do
+    inherit! :search_paths
+
+    
+    
+  end
+end

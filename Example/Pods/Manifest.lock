@@ -1,0 +1,16 @@
+PODS:
+  - HSModules (0.1.0)
+
+DEPENDENCIES:
+  - HSModules (from `../`)
+
+EXTERNAL SOURCES:
+  HSModules:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  HSModules: e19fa96feaf1907133e1b4300cd9f37b46ba6d0f
+
+PODFILE CHECKSUM: d9151a6849728c673923a469c8894b248d6c536e
+
+COCOAPODS: 1.9.3
