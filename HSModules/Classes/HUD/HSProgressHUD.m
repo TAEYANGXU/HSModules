@@ -24,6 +24,7 @@
 #import "HSProgressHUD.h"
 #import <objc/runtime.h>
 #import <CoreMotion/CoreMotion.h>
+#import <XyWidget/ConstHeader.h>
 
 @interface HSProgressHUD ()
 

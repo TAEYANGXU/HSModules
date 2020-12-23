@@ -7,6 +7,9 @@
 //
 
 #import "HSDefinitionListCell.h"
+#import "Masonry.h"
+#import <XyWidget/ConstHeader.h>
+#import "UIFont+PingFangSC.h"
 
 @interface HSDefinitionListCell ()
 @property(nonatomic,strong)UILabel *titleLabel;

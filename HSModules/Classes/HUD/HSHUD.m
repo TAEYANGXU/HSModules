@@ -24,6 +24,7 @@
 #import "HSHUD.h"
 #import "HSProgressHUD.h"
 #import <MBProgressHUD/MBProgressHUD.h>
+#import <XyWidget/ConstHeader.h>
 
 @implementation HSHUD
 
@@ -69,7 +70,7 @@
  */
 + (void)showErrorText:(NSString *)text
 {
-    if ([AppUtils nullEmpty:text].length == 0) {
+    if (text.length == 0) {
         return;
     }
     [HSProgressHUD dismiss];
@@ -206,7 +207,7 @@
 +(void) showFailedHUD:(NSString *)title AddedTo:(UIView *)view interval:(int)interval {
     
     [HSHUD hideHUDTo:view];
-    if ([AppUtils nullEmpty:title].length == 0) {
+    if (title.length == 0) {
         return;
     }
     [HSHUD showHUD:title AddedTo:view interval:interval];
@@ -222,7 +223,7 @@
     
     CGFloat titleW = 170;
     if (title) {
-        titleW = [AppUtils sizeWithText:title font:[UIFont systemFontOfSize:13] with:50].width+20;
+//        titleW = [AppUtils sizeWithText:title font:[UIFont systemFontOfSize:13] with:50].width+20;
     }
     UILabel *titleView = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, titleW, 50)];
     titleView.backgroundColor = [UIColor clearColor];

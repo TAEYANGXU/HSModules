@@ -28,8 +28,28 @@
 #import "HSLiveNoDataView.h"
 #import <VHLiveSDK/VHallApi.h>
 #import "NSString+MD5.h"
+#import <XyWidget/ConstHeader.h>
+#import "Masonry.h"
+#import "HSHUD.h"
+#import "UIView+Additions.h"
+#import "UIFont+PingFangSC.h"
+
+UIKIT_STATIC_INLINE void ScreenRotateToPortrait(UIInterfaceOrientation orientation) {
+    if ([[UIDevice currentDevice] respondsToSelector:@selector(setOrientation:)]) {
+        SEL selector = NSSelectorFromString(@"setOrientation:");
+        NSInvocation *invocation = [NSInvocation invocationWithMethodSignature:[UIDevice instanceMethodSignatureForSelector:selector]];
+        [invocation setSelector:selector];
+        [invocation setTarget:[UIDevice currentDevice]];
+        int val = orientation;
+        [invocation setArgument:&val atIndex:2];
+        [invocation invoke];
+    }
+}
+
 //控制面板隐藏时间
 static const NSTimeInterval TimeInterval = 10.0;
+
+#define kVHMovieDefinitionCount 4
 
 @interface HSWatchLiveVideoView()<VHallMoviePlayerDelegate,VHallMoviePlayerDelegate,DefinitionListViewDelegate>
 
@@ -282,7 +302,7 @@ static const NSTimeInterval TimeInterval = 10.0;
     [self addNotification];
     [self addOrientationNotification];
     
-    self.bigTitleLabel.text = [AppUtils nullEmpty:title];
+    self.bigTitleLabel.text = title;
     self.vhMoviePlayer.moviePlayerView.backgroundColor = [UIColor colorWithHexString:@"#333333"];
     if (vId) {
         self.vhallId = vId;
@@ -302,7 +322,7 @@ static const NSTimeInterval TimeInterval = 10.0;
 //    NSString *iphone = [NSString stringWithFormat:@"%@password",[AppUtils nullEmpty:[HSUserInfoManager sharedManager].userInfo.username]];
     NSMutableDictionary * param = [[NSMutableDictionary alloc]init];
     param[@"id"] = vhallId;
-    param[@"name"] = [AppUtils nullEmpty:@"测试"];
+    param[@"name"] = @"花生";
     param[@"email"] = [NSString md5:[NSString md5:@"152214272030"]];
     [self.vhMoviePlayer startPlay:param];
 }
@@ -593,7 +613,7 @@ static const NSTimeInterval TimeInterval = 10.0;
     
     [self fullScreen:self.isFullScreen];
     
-    [MAIN_WINDOW addSubview:self.vhMoviePlayer.moviePlayerView];
+    [[UIApplication sharedApplication].keyWindow addSubview:self.vhMoviePlayer.moviePlayerView];
     
     CGFloat width = SCREEN_HEIGHT;
 //    [[UIApplication sharedApplication] setStatusBarHidden:YES withAnimation:UIStatusBarAnimationNone];
@@ -1101,7 +1121,7 @@ static const NSTimeInterval TimeInterval = 10.0;
     if (_bigBackButton == nil) {
         _bigBackButton = [UIButton buttonWithType:UIButtonTypeCustom];
         _bigBackButton.tag = 1003;
-        [_bigBackButton dk_setImage:DKImagePickerWithNames(@"icon_back_black", @"icon_back_white") forState:UIControlStateNormal];
+        [_bigBackButton setImage:[UIImage imageNamed:@"icon_back_white"] forState:UIControlStateNormal];
         [_bigBackButton addTarget:self action:@selector(buttonAction:) forControlEvents:UIControlEventTouchUpInside];
     }
     return _bigBackButton;

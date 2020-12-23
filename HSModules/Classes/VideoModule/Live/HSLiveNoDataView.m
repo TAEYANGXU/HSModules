@@ -21,6 +21,9 @@
 //'--------------------------------------------------------------------'
 
 #import "HSLiveNoDataView.h"
+#import "Masonry.h"
+#import <XyWidget/ConstHeader.h>
+#import "UIFont+PingFangSC.h"
 
 @interface HSLiveNoDataView()
 

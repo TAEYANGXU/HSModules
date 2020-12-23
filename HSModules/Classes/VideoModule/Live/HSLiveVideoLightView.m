@@ -22,6 +22,8 @@
 	
 
 #import "HSLiveVideoLightView.h"
+#import "Masonry.h"
+#import <XyWidget/ConstHeader.h>
 
 @implementation HSCustomLightSlider
 //**s修改进度条的h宽度**//

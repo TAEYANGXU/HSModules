@@ -23,6 +23,10 @@
 
 #import "HSDefinitionListView.h"
 #import "HSDefinitionListCell.h"
+#import "Masonry.h"
+#import <XyWidget/ConstHeader.h>
+
+#define kVHMovieDefinitionCount 4
 
 static NSString *cellID = @"HSDefinitionListViewCell";
 @interface HSDefinitionListView()<UITableViewDelegate,UITableViewDataSource>
@@ -78,7 +82,7 @@ static NSString *cellID = @"HSDefinitionListViewCell";
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     //4-self.minDefinition 为要显示的清晰度个数
     [self layoutIfNeeded];
-    return (self.height-4)/(kVHMovieDefinitionCount-self.minDefinition);
+    return (self.bounds.size.height-4)/(kVHMovieDefinitionCount-self.minDefinition);
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     self.selectIndex = indexPath.row + self.minDefinition;
